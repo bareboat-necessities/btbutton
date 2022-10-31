@@ -97,7 +97,8 @@ int main(int argc, char * argv[])
 						//else {
 							//use this loop to print out the codes sent by each button.
 							//Mine sent two codes for each press, one for button-down, the other for button-up.
-							for (int i=0; i<r; i++) printf("%X ",buf[i]); printf("\n");
+							printf("event=");
+							for (int i=0; i<r; i++) printf("%2.2X",buf[i]); printf("\n");
 						//}
 						buf[0] = '\0';
 					}
